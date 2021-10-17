@@ -51,6 +51,13 @@ Also, onvarious benchmarks it outperforms other ANNs by a big difference and hav
 2) It also benchmarks the pretrained and finetuned model performances.
 3) prediction and benchmark functions are exposed to flask API which can be used to get prediction of the string & and benchmark the models.
 
+## Benchmark accuracy
+
+Pretrained model = ~ 45%
+Finetuned model with single epocs = ~ 60%
+Finetuned model with 3 - 4 epocs = ~ 80%
+
+
 ## Usage & files
 
 All the project is build in a docker container via docker file.
