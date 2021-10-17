@@ -1,0 +1,7 @@
+sentence_transformers
+transformers
+scann
+flask
+scikit-learn
+gunicorn
+pandas
