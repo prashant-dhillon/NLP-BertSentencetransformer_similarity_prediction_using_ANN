@@ -55,7 +55,6 @@ Also, onvarious benchmarks it outperforms other ANNs by a big difference and hav
 
 Pretrained model = ~ 45%
 Finetuned model with single epocs = ~ 60%
-Finetuned model with 3 - 4 epocs = ~ 80%
 
 
 ## Usage & files
