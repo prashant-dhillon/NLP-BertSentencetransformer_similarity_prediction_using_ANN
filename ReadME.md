@@ -39,7 +39,7 @@ A notebook is present in the repo which is used to finetune the model
 
 An approximate nearest neighbor search algorithm return points, whose distance from the query are nearest by calcualting distance between embedding vectors. It also indexes the distances in a fast searchable data structure. It helps to speed up our tasks such as classification by just building a barebone classifier structure on top of it since classifier doesn't need to calculate/estimate distances.
 
-There are few libraries I am aware of such that annoy, faiss, scann and KDtrees. honestly, I have used most of the times KDtress but for this purpose after doing some online research i decided to go with google's scann.
+There are few libraries such that annoy, faiss, scann. but for particular application i decided to go with google's scann.
 
 ScaNN (Scalable Nearest Neighbors) is a method for efficient vector similarity search at scale. it provides better tuning and different methods of indexing based on dataset size. so it uses methods specifically developed for dataset sizes by manually selecting the indexing methods for our data. 
 
@@ -47,7 +47,7 @@ Also, onvarious benchmarks it outperforms other ANNs by a big difference and hav
 
 ## Pipeline
 
-1) I built a pipeline.py file which contains all the functions to generate embeddings, compute indexes using knn and clasify for the prediction. 
+1) a pipeline.py file which contains all the functions to generate embeddings, compute indexes using knn and clasify for the prediction. 
 2) It also benchmarks the pretrained and finetuned model performances.
 3) prediction and benchmark functions are exposed to flask API which can be used to get prediction of the string & and benchmark the models.
 
